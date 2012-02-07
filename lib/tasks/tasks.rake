@@ -7,6 +7,6 @@ namespace :db do
 end
 
 def make_admin #tworzymy haslo admina
-    user = User.create!(:password => 'mietek')
+    user = Admin.create!(:password => 'mietek')
     user.save
 end
