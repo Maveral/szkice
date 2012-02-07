@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Szkice</title>
+  <meta name="Author" content="Mariusz Franke" />
+  <meta charset="UTF-8">
+  
+  <%= include_tiny_mce_if_needed %>
+  
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+	<div id="logo"></div>
+	<div id="menu">
+		<div class="inmenu"><%= link_to "My", root_path %></div>
+		<div class="inmenu"><%= link_to "Poezja, czyli...", poems_path %></div>
+		<div class="inmenu"><%= link_to "Proza, czyli...", proses_path %></div>
+		<div class="inmenu"><%= link_to "Ślady...", new_ksiega_path %></div>
+	</div>
+	<div id="body">
+
+	<%= yield %>
+
+	</div>
+	<div id="footer">
+		<font id="footerfont">Szkice Umysłu</font> 2006 - <%= Time.now.year %>
+	</div>
+<font color=white><%= debug(params) if Rails.env.development? %></font>
+</body>
+</html>

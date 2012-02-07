@@ -1,0 +1,10 @@
+<h1>Poezja, czyli... obraz duszy</h1>
+<div id="bodypoems">
+<% unless @utwory.empty? %>
+<% @utwory.each do |utwor| %>
+<%= link_to utwor.title, utwor %>
+<br />
+<% end %>
+<% else %>
+"Brak wpisów"
+<% end %>

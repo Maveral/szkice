@@ -1,0 +1,10 @@
+<%= form_for (@utwor) do |f| %>
+<%= f.label "Tytuł" %><br />
+<%= f.text_field :title %><br />
+  <%= f.label "Treść" %><br />
+  <center>
+  <%= f.text_area :body, :class => "mceEditor" %></center><br />
+  Proza?
+  <%= f.check_box :poem %><br />
+<%= f.submit "Zapisz" %>
+<% end %>

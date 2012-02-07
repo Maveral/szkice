@@ -1,0 +1,23 @@
+<h1>Ślady...</h1>
+<center><%= will_paginate @wpisy %></center>
+<% unless @wpisy.empty? %>
+<% @wpisy.each do |wpis1| %>
+<div class="wpis">
+<%= wpis1.nick %> napisał(a):
+<br /><br />
+<%= raw(wpis1.content) %>
+</div>
+<% end %>
+<% else %>
+<center>"Brak wpisów"</center>
+<% end %>
+
+<%= form_for (@wpis) do |f| %>
+<%= f.label "Nick" %><br />
+<%= f.text_field :nick %><br />
+  <%= f.label "Treść" %><br />
+  <center>
+  <%= f.text_area :content, :class => "mceEditor" %></center><br />
+<%= f.submit "Zostaw ślad" %>
+<% end %>
+<br />

@@ -1,0 +1,169 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+}
+
+div#logo
+{
+	margin: 0 auto;
+	padding: 0;
+	background-image:url('/images/logo.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 1000px;
+	height: 175px;
+}
+
+div#menu
+{
+	margin: 0 auto;
+	padding: 0;
+	width: 1000px;
+	height: 25px;
+	text-align: center;
+	background-color: black;
+}
+
+div.inmenu
+{
+	background-color: black;
+	color: #00FFFF;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	height: 20px;
+}
+
+div.inmenu:hover
+{
+	background-color: #00FFFF;
+	color: black;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+  	border-radius: 50px;
+}
+
+div.inmenu:hover > a
+{
+	color: #000000;
+}
+
+div#adminmenu
+{
+	text-align: center;
+}
+
+div#adminmenu > a:hover
+{
+	color: black;
+	background-color: #00FFFF;
+}
+
+div#body
+{
+	margin: 0 auto;
+	padding: 0px;
+	width: 1000px;
+	background-color: black;
+	color: #FFFFFF;
+	min-height: 600px;
+}
+
+div#bodypoems
+{
+	#border: 1px solid red;
+	min-height: 100%;
+	background-image: url('/images/kula1.jpg');
+	background-position: top right;
+	background-repeat: no-repeat;
+	padding-left: 100px;
+}
+
+div#bodyprose
+{
+	#border: 1px solid red;
+	min-height: 100%;
+	background-image: url('/images/sam.jpg');
+	background-position: top right;
+	background-repeat: no-repeat;
+	padding-left: 100px;
+}
+
+div.wpis
+{
+	border: 2px solid #00FFFF;
+	width: 50%;
+	margin: 10px auto;
+}
+
+div.wpis:hover
+{
+	border: 2px solid #00FFFF;
+	width: 60%;
+}
+
+div.wpisadmin
+{
+	border: 2px solid #00FFFF;
+	width: 50%;
+	margin: 10px auto;
+}
+
+div#footer
+{
+	margin: 0 auto;
+	padding: 0px;
+	text-align: center;
+	width: 1000px;
+	height: 25px;
+	background-color: black;
+	color: #FFFFFF;
+}
+
+p
+{
+	margin: 0 20px;
+}
+
+font#footerfont
+{
+	color: #00FFFF;
+}
+
+a
+{
+	color: #00FFFF;
+	text-decoration: none;
+}
+
+a:hover
+{
+	background-color: #00FFFF;
+	color: #000000;
+}
+
+h1
+{
+	color: #00FFFF;
+	text-align: center;
+}
+
+form
+{
+	margin-top: 30px;
+	text-align: center;
+}
+
+form#admin
+{
+	text-align: center;
+	margin-top: 80px;
+}
+
+textarea.mceEditor
+{
+	width: 500px;
+}

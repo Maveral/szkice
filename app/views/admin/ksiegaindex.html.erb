@@ -1,0 +1,14 @@
+<h1>Edycja księgi gości</h1>
+<center><%= will_paginate @wpisy %></center>
+<% unless @wpisy.empty? %>
+<% @wpisy.each do |wpis| %>
+<div class="wpisadmin">
+<%= wpis.nick %> napisał(a):
+<br /><br />
+<%= raw(wpis.content) %><br />
+<%= link_to "Usuń", :action => "destroywpis", :wpis => wpis %>
+</div>
+<% end %>
+<% else %>
+<center>"Brak wpisów"</center>
+<% end %>

@@ -1,0 +1,5 @@
+<%= form_for(:admin, :url => tryadmin_path, :html => {:id => 'admin'}) do |ad| %>
+<%= ad.label :password, "Hasło administratora" %><br />
+<%= ad.password_field :password %>
+<%= ad.submit "Loguj" %>
+<% end %>

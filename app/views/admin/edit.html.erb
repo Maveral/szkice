@@ -1,0 +1,7 @@
+<%= form_for @admin do |f| -%>
+<%= f.label "Nowe hasło" %><br />
+<%= f.password_field :password, :value => '' %><br />
+<%= f.label "Potwierdź hasło" %><br />
+<%= f.password_field :password_confirmation %><br />
+<%= f.submit "Edytuj" %>
+<% end %>

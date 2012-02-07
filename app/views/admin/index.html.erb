@@ -1,0 +1,22 @@
+<h1>Menu admina</h1>
+<div id="adminmenu">
+<%= link_to "Dodaj nowy tekst", new_utwor_path %> || <%= link_to "Zmień hasło administratora", edit_admin_path(session[:admin][:id])%> || <%= link_to "Edycja księgi gości", ksiega_path %> || <%= link_to "Wyloguj się", adminlogout_path %>
+</div>
+<br /><br />
+<%= will_paginate @utwory %><br />
+<% unless @utwory.empty? %>
+<% @utwory.each do |utwor| %>
+<%= utwor.id %>. <%= utwor.title %>
+[
+<% if utwor.poem == 0 %>
+Wiersz
+<% else %>
+Proza
+<% end %>
+] - 
+<%= link_to "Edytuj", edit_utwor_path(utwor) %> || <%= link_to "Pokaż", utwor %> || <%= link_to "Usuń", :action => "delete", :utwor => utwor %>
+<br />
+<% end %>
+<% else %>
+"Brak wpisów"
+<% end %>
