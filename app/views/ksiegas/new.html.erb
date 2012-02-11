@@ -13,6 +13,7 @@
 <% end %>
 
 <%= form_for (@wpis) do |f| %>
+<%= f.error_messages %>
 <%= f.label "Nick" %><br />
 <%= f.text_field :nick %><br />
   <%= f.label "Treść" %><br />

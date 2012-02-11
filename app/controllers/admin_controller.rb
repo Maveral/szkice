@@ -38,11 +38,6 @@ class AdminController < ApplicationController
     end
   end
   
-  def delete
-    @utwor = Utwor.find(params[:utwor])
-    redirect_to admin_index_path if @utwor.destroy
-  end
-  
   def ksiegaindex
     @wpisy = Ksiega.paginate(:page => params[:page], :per_page => 10).all(:order => "created_at DESC")
   end

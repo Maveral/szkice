@@ -11,6 +11,8 @@ gem 'will_paginate', '~> 3.0'
 
 gem 'tiny_mce'
 
+gem 'dynamic_form'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

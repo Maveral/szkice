@@ -8,7 +8,12 @@ class KsiegasController < ApplicationController
   
   def create
     @wpis = Ksiega.new(params[:ksiega])
-    redirect_to new_ksiega_path if @wpis.save
+    if @wpis.save
+      redirect_to new_ksiega_path
+    else
+      @wpisy = Ksiega.paginate(:page => params[:page], :per_page => 10).all(:order => "created_at DESC")
+      render 'new'
+    end
   end
   
 end

@@ -6,7 +6,6 @@ Szkice::Application.routes.draw do
   match 'adminlogin' => "admin#login"
   match 'tryadmin' => "admin#auth"
   match 'adminlogout' => "admin#destroy"
-  match 'deleteutwor' => "admin#delete"
   match 'ksiega' => "admin#ksiegaindex"
   match 'deletewpis' => "admin#destroywpis"
   resources :admin, :except => [:show, :new, :create]

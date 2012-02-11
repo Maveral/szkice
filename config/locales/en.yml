@@ -3,6 +3,21 @@
 
 en:
   hello: "Hello world"
+  delete: "Usuń"
+  activerecord:
+    attributes:
+      ksiega:
+        nick: "Nick"
+        content: "Tekst"
+    errors:
+      template:
+        header:
+          one:   "Wykryto 1 błąd"
+          other: "Wykryto %{count} błędy"
+        body:    "Popraw następujące błędy:"
+      messages:
+        blank: "nie może być pusty!"
+        too_short: "musi mieć co najmniej %{count} znaki"
   will_paginate:
     previous_label: "Poprzednia"
     next_label: "Następna"

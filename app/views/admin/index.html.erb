@@ -14,7 +14,7 @@ Wiersz
 Proza
 <% end %>
 ] - 
-<%= link_to "Edytuj", edit_utwor_path(utwor) %> || <%= link_to "Pokaż", utwor %> || <%= link_to "Usuń", :action => "delete", :utwor => utwor %>
+<%= link_to "Edytuj", edit_utwor_path(utwor) %> || <%= link_to "Pokaż", utwor %> || <%= link_to t(:delete), utwor, :method => "delete" %>
 <br />
 <% end %>
 <% else %>
